@@ -1,4 +1,5 @@
 #include"gameover.h"
+#include"HelloWorldScene.h"
 USING_NS_CC;
 
 Scene* gameover::createScene()
@@ -21,8 +22,8 @@ bool gameover::init()
         "CloseNormal.png",
         "CloseSelected.png",
         CC_CALLBACK_1(gameover::menuCloseCallback, this));
-        float x = origin.x + visibleSize.width * 3 / 5 - closeItem->getContentSize().width / 2;
-        float y = origin.y + visibleSize.height * 2 / 5;
+        float x = origin.x + visibleSize.width /2;
+        float y = origin.y + visibleSize.height * 1 / 5;
         closeItem->setPosition(Vec2(x, y));
 
     // create menu, it's an autorelease object
@@ -42,5 +43,5 @@ bool gameover::init()
 
 void gameover::menuCloseCallback(Ref* pSender)
 {
-     Director::getInstance()->end();
+    Director::getInstance()->end();
 }

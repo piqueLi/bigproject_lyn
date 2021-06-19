@@ -1,4 +1,5 @@
 #include"win.h"
+#include"HelloWorldScene.h"
 USING_NS_CC;
 
 Scene* win::createScene()

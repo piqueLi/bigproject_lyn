@@ -13,7 +13,7 @@ public:
     // a selector callback
     void menuScenefirst(cocos2d::Ref* pSender);
     void menuSceneSecond(cocos2d::Ref* pSender);
-    void menuSceneThird(cocos2d::Ref* pSender);    // implement the "static create()" method manually
+    void menuSceneThird(cocos2d::Ref* pSender);   
     CREATE_FUNC(HelloWorld);
 };
 

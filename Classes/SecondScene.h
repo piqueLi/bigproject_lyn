@@ -14,6 +14,8 @@ public:
 	void SecondScene::Eat();
 	void SecondScene::Border();
 	bool SecondScene::repeat(int x,int y);
+	void SecondScene::file(int score);
+	void tj_time_output(const time_t input_time);
 	int score=0;
 };
 
